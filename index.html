@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="header">Tik-Tac-Toe</h1><br>
+        <div class="choice">
+            <div class="playerVsPlayer">
+                <p>Player Vs Player</p>
+            </div>
+            <div class="playerVsComputer">
+                <p>Player Vs Computer</p>
+            </div>
+        </div>
+        <form class="enterName" style="display:none;">
+            <label for="player1" id="playerO">Please Enter Player 1 Name</label>
+            <br><input type="text" id="player1" required><br><br>
+            <label for="player2" id="playerT">Please Enter Player 2 Name</label>
+            <br><input type="text" id="player2" required><br><br>
+            <input class="submit" type="submit" value="Let's Go">
+        </form>
+        
+        <form class="enterName" id="enterName" style="display:none;">
+            <label for="player1" id="playerO">Please Enter Player 1 Name</label>
+            <br><input type="text" id="player11" required><br>
+            <input class="submit" type="submit" value="Let's Go">
+        </div>
+        <div id="Status" style="display:none;"></div>
+
+        <div class="board" style="display:none;">
+            <div class="firstRow">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="secondRow">
+                <div class="four"></div>
+                <div class="five"></div>
+                <div class="six"></div>
+            </div>
+            <div class="thirdRow">
+                <div class="seven"></div>
+                <div class="eight"></div>
+                <div class="nine"></div>
+            </div>
+        </div>
+        <div class="winner" style="display:none;">
+            <p></p>
+        </div>
+        <div class="restart" style="display:none;">
+            <button class="restart">End Game</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer">Designed by Yassin Yassin</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
